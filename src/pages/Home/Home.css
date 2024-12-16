@@ -1,0 +1,194 @@
+
+
+.slider-content{
+  height: 100vh;
+  width: 100%;
+  overflow: hidden; /* Empêche l'image de déborder si la taille est trop grande */
+}
+
+
+/* 
+.mySwiper .container-slide:nth-child(2) {
+  background-image: linear-gradient(rgba(26, 20, 20, 0.4),rgba(22, 18, 18, 0.4)), url("../../../public/img/salle.jpg")
+
+}
+.mySwiper .container-slide:nth-child(1) {
+  background-image: linear-gradient(rgba(26, 20, 20, 0.4),rgba(22, 18, 18, 0.4)), url("../../../public/img/party.jpg")
+
+
+}
+.mySwiper .container-slide:nth-child(3) {
+  background-image: linear-gradient(rgba(26, 20, 20, 0.4),rgba(22, 18, 18, 0.4)), url("../../../public/img/mariage.jpg")
+
+
+} */
+
+.ban{
+  border: 4px solid red;
+  height: 400px;
+}
+
+.wedding {
+  width: 100%;
+  height: auto;
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.title{
+  color: white;
+
+}
+.description{
+  color: white;
+  width: 90%;
+}
+
+
+
+.mySwiper {
+  position: relative;
+  height: 100vh; /* S'assurer que le slider prend toute la hauteur */
+  overflow: hidden;
+}
+
+.background-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  height: 100%;
+  z-index: 1;
+}
+
+
+
+.background-slide {
+  background-size: cover;
+  background-position: center;
+  height: 100%; /* Assurer la pleine hauteur */
+  width: 100%; /* S'assurer que chaque slide occupe tout l'espace */
+  transition: transform 0.8s ease, opacity 0.8s ease;
+
+}
+
+.mySwiper .background-slide:nth-child(3) {
+  background-position: center top; /* Centrer vers le haut si la tête est coupée */
+  background-size: cover;
+}
+
+
+.search-container {
+  position: relative;
+  z-index: 2; /* Placer le contenu devant les images de fond */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white; /* Couleur du texte pour contraste */
+  padding: 20px;
+  position: absolute;
+  top: 240px;
+}
+
+
+.search-bar .input,
+.search-bar .search-button {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+
+ .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container-slide {
+  position: relative;
+}
+
+
+
+
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  font-size: 16px;
+  border: none; /* Supprime la bordure */
+  outline: none; /* Supprime le contour lors du focus */
+  cursor: pointer;
+}
+
+@media(max-width:768px){
+
+  .search-bar{
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+  }
+
+  .description{
+    font-size: 12px;
+  }
+
+  .search-bar .input{
+    font-size: 12px;
+  }
+  
+}
+
+ .search-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+
+.search-button:hover {
+  background-color: #0056b3;
+}  

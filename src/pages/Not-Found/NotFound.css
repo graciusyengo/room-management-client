@@ -1,0 +1,24 @@
+/* NotFound.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre l'image horizontalement */
+    align-items: center; /* Centre l'image verticalement */
+    height: 100vh; /* Assure que le conteneur prend toute la hauteur de la fenêtre */
+  }
+
+  .image {
+    max-width: 50%; 
+    height: auto; 
+  }
+  .back{
+    background-color: white;
+    border: 1px solid #39ACE7 ;
+    color: #333;
+    font-weight: 600;
+    padding: 15px;
+    cursor: pointer;
+    margin-bottom: 45px;
+
+  }
+

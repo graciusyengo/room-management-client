@@ -1,0 +1,49 @@
+.display-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+ 
+
+
+}
+.ml{
+  margin-left: 900px;
+}
+.nav-links-container{
+  display: flex;
+  margin-left: 700px;
+
+}
+
+.nav-list {
+    display: flex;
+  
+ 
+
+}
+
+.menu{
+  display: flex;
+
+}
+
+.nav-item{
+  list-style: none;
+}
+.search-button-header {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 205px;
+   
+  }
+  
+
+  .search-button-header:hover {
+    background-color: #0056b3;
+  }
