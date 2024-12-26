@@ -8,8 +8,8 @@ import { MdOutlineFestival } from 'react-icons/md'
 
 function MunicipalityRoom() {
   return (
-   <div className="container-type-room">
-         <h2 className="title-type">Quelle salle recherchez-vous ?</h2>
+   <div className="container-municipality-room">
+         <h2 className="title-municilpality">Quelle salle recherchez-vous ?</h2>
          <div className="cards">
            <div className="card">
              <ImManWoman  size={45} className="manWoman"/>

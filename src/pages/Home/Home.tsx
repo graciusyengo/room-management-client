@@ -4,8 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
-import FeaturedRooms from "../../components/Featured-rooms/FeaturedRooms"
-import Banner from "../../components/Banner/Banner"
+import FeaturedRooms from "../../components/Featured-rooms/FeaturedRooms";
+import Banner from "../../components/Banner/Banner";
 import TypeRoom from "../../components/Type-room/TypeRoom";
 
 // Import Swiper styles
@@ -14,9 +14,10 @@ import "swiper/css/navigation";
 import MunicipalityRoom from "../../components/Municipality-room/MunicipalityRoom";
 
 function Home() {
+  const [showTextRecherche, setShowTextRecherche] = useState(
+    window.innerWidth <= 375
+  );
 
-  const [showTextRecherche,setShowTextRecherche]= useState(window.innerWidth<=375)
- 
   useEffect(() => {
     const handleResize = () => {
       setShowTextRecherche(window.innerWidth <= 375);
@@ -32,7 +33,7 @@ function Home() {
 
   return (
     <div className="container-home">
-      <div className="slider-content">
+      {/* <div className="slider-content">
         <Swiper
           navigation={true}
           modules={[Navigation, Autoplay]}
@@ -67,7 +68,7 @@ function Home() {
                 voluptatibus vitae accusantium magni officia labore. Excepturi
                 saepe accusamus accusantium? Maiores, repudiandae?
               </p>
-            </div>
+            </div> 
             <div className="search-bar">
               <input
                 type="text"
@@ -106,13 +107,12 @@ function Home() {
             </div>
           </div>
         </Swiper>
-      </div>
+      </div> */}
 
       <FeaturedRooms />
       <Banner />
-      <TypeRoom/>
-      <MunicipalityRoom/>
-
+      <TypeRoom />
+      <MunicipalityRoom />
     </div>
   );
 }
