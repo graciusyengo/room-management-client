@@ -1,6 +1,7 @@
 .featured-rooms {
     text-align: center;
     padding: 20px;
+  ;
   
   }
   
@@ -118,6 +119,11 @@
     height: 300px;
   }
 
+
+  @media (max-width:768px){
+   
+
+  }
 
 
   

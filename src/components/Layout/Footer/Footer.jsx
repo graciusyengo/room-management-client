@@ -41,8 +41,8 @@ function Footer() {
         <div className="footer-newsletter">
           <h4>Subscribe To Newsletter</h4>
           <p>Enter your email address for receiving valuable newsletters.</p>
-          <form>
-            <input type="email" placeholder="Your Email" required/>
+          <form className='form-newlewtter'>
+            <input type="email" className="email"placeholder="Your Email" required/>
             <button type="submit"><i className="fas fa-envelope"></i></button>
           </form>
           <p>&copy; 2025 TailGrids</p>
