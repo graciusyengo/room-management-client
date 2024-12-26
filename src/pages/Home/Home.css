@@ -144,7 +144,7 @@
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 1000px;
 }
 
 .input {
@@ -166,10 +166,21 @@
     flex-direction: column;
     max-width: 350px;
   }
+  .search-bar .input, .search-bar .search-button{
+    margin: 0;
+    font-size: 12px;
+  }
+
+  select.input {
+    text-align: center; /* Centre le texte du select */
+    text-align-last: center; /* Centre uniquement le texte sélectionné */
+  }
 
   .description{
     font-size: 12px;
   }
+
+  
 
   .search-bar .input{
     font-size: 12px;

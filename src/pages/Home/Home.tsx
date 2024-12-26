@@ -6,10 +6,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import FeaturedRooms from "../../components/Featured-rooms/FeaturedRooms"
 import Banner from "../../components/Banner/Banner"
+import TypeRoom from "../../components/Type-room/TypeRoom";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
+import MunicipalityRoom from "../../components/Municipality-room/MunicipalityRoom";
 
 function Home() {
 
@@ -69,7 +71,7 @@ function Home() {
             <div className="search-bar">
               <input
                 type="text"
-                placeholder="Code postal / Commune / Département ?"
+                placeholder="Quartier / Commune ?"
                 className="input"
               />
 
@@ -83,6 +85,13 @@ function Home() {
                 <option value="soiree">Soirée</option>
                 <option value="autre">Autre</option>
               </select>
+              <input
+                type="text"
+                placeholder="Nombre de participant ?"
+                className="input"
+              />
+
+             
               <button className="search-button">
 
               {showTextRecherche ? (
@@ -101,6 +110,9 @@ function Home() {
 
       <FeaturedRooms />
       <Banner />
+      <TypeRoom/>
+      <MunicipalityRoom/>
+
     </div>
   );
 }

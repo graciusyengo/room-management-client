@@ -1,0 +1,50 @@
+.container-type-room {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.title-type{
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.manWoman,.outlineFestical,.outlineCake,.universitySolid,.martiniGlassEmpty,.homeSmile,.personneChalkboard{
+    color:#007bff;
+
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    padding: 20px;
+    width: 200px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: #f9f9f9;
+}
+
+.card img {
+    max-width: 100%;
+}
+@media (max-width: 600px) {
+    .card {
+        width: 120px;
+    }
+}

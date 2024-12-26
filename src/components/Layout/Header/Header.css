@@ -3,8 +3,6 @@
     justify-content: space-between;
     align-items: center;
 
- 
-
 
 }
 .ml{
@@ -19,9 +17,8 @@
 .nav-list {
     display: flex;
   
- 
-
 }
+
 
 .menu{
   display: flex;
@@ -46,4 +43,10 @@
 
   .search-button-header:hover {
     background-color: #0056b3;
+  }
+
+  .active{
+    color: #0056b3;
+    font-weight: 500;
+    
   }

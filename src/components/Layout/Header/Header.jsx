@@ -48,12 +48,12 @@ function Header() {
                   </NavLink>
                 </li>
                 <li className="nav-item ">
-                  <NavLink className="nav-link">
+                  <NavLink className="nav-link" to="/salle">
                     Salles <span className="sr-only">(current)</span>
                   </NavLink>
                 </li>
                 <li className="nav-item ">
-                  <NavLink className="nav-link">
+                  <NavLink className="nav-link" to="/prestataire">
                     Prestataires <span className="sr-only">(current)</span>
                   </NavLink>
                 </li>
