@@ -33,7 +33,7 @@ function Home() {
 
   return (
     <div className="container-home">
-      {/* <div className="slider-content">
+      <div className="slider-content">
         <Swiper
           navigation={true}
           modules={[Navigation, Autoplay]}
@@ -107,7 +107,7 @@ function Home() {
             </div>
           </div>
         </Swiper>
-      </div> */}
+      </div>
 
       <FeaturedRooms />
       <Banner />
