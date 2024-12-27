@@ -12,6 +12,7 @@ import TypeRoom from "../../components/Type-room/TypeRoom";
 import "swiper/css";
 import "swiper/css/navigation";
 import MunicipalityRoom from "../../components/Municipality-room/MunicipalityRoom";
+import Testimonials from "../../components/Testimonials/Testimonials";
 
 function Home() {
   const [showTextRecherche, setShowTextRecherche] = useState(
@@ -113,6 +114,8 @@ function Home() {
       <Banner />
       <TypeRoom />
       <MunicipalityRoom />
+
+      <Testimonials/>
     </div>
   );
 }
