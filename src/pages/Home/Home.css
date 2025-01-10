@@ -81,6 +81,17 @@
 .mySwiper .background-slide:nth-child(3) {
   background-position: center top; /* Centrer vers le haut si la tête est coupée */
   background-size: cover;
+  height: 700px;
+}
+
+.mySwiper .background-slide:nth-child(2){
+  height: 700px;
+
+}
+
+.mySwiper .background-slide:nth-child(1){
+  height: 700px;
+
 }
 
 
