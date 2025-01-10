@@ -30,7 +30,7 @@ function Testimonials() {
         modules={[Pagination,Autoplay]}
         className="mySwiperTestimonial"
       >
-        <SwiperSlide> <div className="testimonial-card">
+        <SwiperSlide className='swiper-slideTestimonial'> <div className="testimonial-card">
     <div className="card-header">
       <div className="client-photo">
         <img src="img/salle.jpg" alt="Jean Dupont"/>
@@ -47,9 +47,27 @@ function Testimonials() {
     <p className="testimonial-text">
       "Un service exceptionnel ! Les salles sont magnifiques, et l'équipe est très professionnelle. Je recommande vivement."
     </p>
-  </div></SwiperSlide>
+  </div></SwiperSlide >
 
-        <SwiperSlide>  <div className="testimonial-card">
+        <SwiperSlide  className='swiper-slideTestimonial'>  <div className="testimonial-card">
+    <div className="card-header">
+      <div className="client-photo">
+        <img src="img/salle.jpg" alt="Paul Martin"/>
+      </div>
+      <div className="client-info">
+        <h3>Paul Martin</h3>
+        <div className="social-icons">
+          <a href="https://facebook.com" target="_blank"><i className="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com" target="_blank"><i className="fab fa-twitter"></i></a>
+          <a href="https://linkedin.com" target="_blank"><i className="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <p className="testimonial-text">
+      "Très satisfait ! La rapidité et l’efficacité de l’équipe sont impressionnantes. Je reviendrai sans hésitation."
+    </p>
+  </div></SwiperSlide >
+        <SwiperSlide  className='swiper-slideTestimonial'>  <div className="testimonial-card">
     <div className="card-header">
       <div className="client-photo">
         <img src="img/salle.jpg" alt="Paul Martin"/>
@@ -67,7 +85,7 @@ function Testimonials() {
       "Très satisfait ! La rapidité et l’efficacité de l’équipe sont impressionnantes. Je reviendrai sans hésitation."
     </p>
   </div></SwiperSlide>
-        <SwiperSlide>  <div className="testimonial-card">
+        <SwiperSlide  className='swiper-slideTestimonial'>  <div className="testimonial-card">
     <div className="card-header">
       <div className="client-photo">
         <img src="img/salle.jpg" alt="Paul Martin"/>
@@ -85,7 +103,7 @@ function Testimonials() {
       "Très satisfait ! La rapidité et l’efficacité de l’équipe sont impressionnantes. Je reviendrai sans hésitation."
     </p>
   </div></SwiperSlide>
-        <SwiperSlide>  <div className="testimonial-card">
+        <SwiperSlide  className='swiper-slideTestimonial'>  <div className="testimonial-card">
     <div className="card-header">
       <div className="client-photo">
         <img src="img/salle.jpg" alt="Paul Martin"/>
@@ -103,25 +121,7 @@ function Testimonials() {
       "Très satisfait ! La rapidité et l’efficacité de l’équipe sont impressionnantes. Je reviendrai sans hésitation."
     </p>
   </div></SwiperSlide>
-        <SwiperSlide>  <div className="testimonial-card">
-    <div className="card-header">
-      <div className="client-photo">
-        <img src="img/salle.jpg" alt="Paul Martin"/>
-      </div>
-      <div className="client-info">
-        <h3>Paul Martin</h3>
-        <div className="social-icons">
-          <a href="https://facebook.com" target="_blank"><i className="fab fa-facebook-f"></i></a>
-          <a href="https://twitter.com" target="_blank"><i className="fab fa-twitter"></i></a>
-          <a href="https://linkedin.com" target="_blank"><i className="fab fa-linkedin-in"></i></a>
-        </div>
-      </div>
-    </div>
-    <p className="testimonial-text">
-      "Très satisfait ! La rapidité et l’efficacité de l’équipe sont impressionnantes. Je reviendrai sans hésitation."
-    </p>
-  </div></SwiperSlide>
-        <SwiperSlide>  <div className="testimonial-card">
+        <SwiperSlide className='swiper-slideTestimonial'>  <div className="testimonial-card">
     <div className="card-header">
       <div className="client-photo">
         <img src="img/salle.jpg" alt="Paul Martin"/>

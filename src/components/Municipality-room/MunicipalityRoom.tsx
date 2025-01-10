@@ -8,7 +8,14 @@ import { LiaUniversitySolid } from 'react-icons/lia'
 import { MdOutlineFestival } from 'react-icons/md'
 
 
+
 function MunicipalityRoom() {
+
+  // const { rooms, error } = useRooms();
+
+  // console.log('######',rooms)
+
+
   return (
    <div className="container-municipality-room">
          <h2 className="title-municilpality">Location des salles par commune ?</h2>

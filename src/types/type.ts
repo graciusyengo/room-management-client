@@ -1,3 +1,5 @@
+
+//USER
 export interface IUSerData{
     email:string
     password:string
@@ -5,10 +7,8 @@ export interface IUSerData{
   
 }
 export interface IUSerCurrent{
-    email:string | undefined; // Autoriser undefined
-   
+    email:string | undefined; // Autoriser undefine
     accessToken:string
-  
   
 }
 
@@ -25,4 +25,19 @@ export interface IResponseUSerData{
     _id?:string  | undefined
     message:string  | undefined
 }
+
+//ROOMS
+
+export interface IRoomData{
+    nom: string;
+    description: string;
+    adresse: string;
+    capacite: number;
+    disponibilite: boolean;
+    images: string;
+    etat: string;
+  
+}
+
+
 

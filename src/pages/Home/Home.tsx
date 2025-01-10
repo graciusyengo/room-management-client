@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
-import FeaturedRooms from "../../components/Featured-rooms/FeaturedRooms";
+
 import Banner from "../../components/Banner/Banner";
 import TypeRoom from "../../components/Type-room/TypeRoom";
 
@@ -13,11 +13,18 @@ import "swiper/css";
 import "swiper/css/navigation";
 import MunicipalityRoom from "../../components/Municipality-room/MunicipalityRoom";
 import Testimonials from "../../components/Testimonials/Testimonials";
+import Services from "../../components/Services/Services";
+
+import FeaturedRooms from "../../components/Featured-rooms/FeaturedRooms";
+// import { RoomsProvider } from "../../context/RoomContext";
+
 
 function Home() {
   const [showTextRecherche, setShowTextRecherche] = useState(
     window.innerWidth <= 375
   );
+
+
 
   useEffect(() => {
     const handleResize = () => {
@@ -33,6 +40,8 @@ function Home() {
   }, []);
 
   return (
+
+ 
     <div className="container-home">
       <div className="slider-content">
         <Swiper
@@ -63,6 +72,8 @@ function Home() {
           <div className="search-container">
             <div className="text">
               <h1 className="title">Salle de fête</h1>
+
+             
               <p className="description">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias
                 maxime error eius amet voluptate vero dolorum esse? Debitis
@@ -101,22 +112,24 @@ function Home() {
       ) : (
         <FontAwesomeIcon icon={faSearch} />
       )}
-
-               
               </button>
           
             </div>
           </div>
         </Swiper>
       </div>
-
-      <FeaturedRooms />
+    
+      <FeaturedRooms/>
       <Banner />
       <TypeRoom />
       <MunicipalityRoom />
+    
 
       <Testimonials/>
+      <Services/>
+   
     </div>
+   
   );
 }
 

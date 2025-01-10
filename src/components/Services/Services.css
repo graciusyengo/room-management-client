@@ -1,0 +1,52 @@
+
+
+.container-services {
+    text-align: center;
+    margin: 50px auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+.title-service{
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 20px ;
+}
+
+
+/* Grille */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 10px;
+  }
+
+.grid-item{
+    background-image: url("../../../public/img/musique.jpg");
+    position: relative;
+    height: 200px;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+
