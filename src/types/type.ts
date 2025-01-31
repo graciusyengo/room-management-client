@@ -33,9 +33,19 @@ export interface IRoomData{
     description: string;
     adresse: string;
     capacite: number;
+    commune:string;
     disponibilite: boolean;
     images: string;
     etat: string;
+  
+}
+
+
+export interface ITypeRoomData{
+    type: string;
+    description: string;
+    icon: string;
+  
   
 }
 

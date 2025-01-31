@@ -16,15 +16,13 @@ import Testimonials from "../../components/Testimonials/Testimonials";
 import Services from "../../components/Services/Services";
 
 import FeaturedRooms from "../../components/Featured-rooms/FeaturedRooms";
+import { RoomsProvider } from "../../context/RoomContext";
 // import { RoomsProvider } from "../../context/RoomContext";
-
 
 function Home() {
   const [showTextRecherche, setShowTextRecherche] = useState(
     window.innerWidth <= 375
   );
-
-
 
   useEffect(() => {
     const handleResize = () => {
@@ -40,8 +38,6 @@ function Home() {
   }, []);
 
   return (
-
- 
     <div className="container-home">
       <div className="slider-content">
         <Swiper
@@ -73,14 +69,13 @@ function Home() {
             <div className="text">
               <h1 className="title">Salle de fête</h1>
 
-             
               <p className="description">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias
                 maxime error eius amet voluptate vero dolorum esse? Debitis
                 voluptatibus vitae accusantium magni officia labore. Excepturi
                 saepe accusamus accusantium? Maiores, repudiandae?
               </p>
-            </div> 
+            </div>
             <div className="search-bar">
               <input
                 type="text"
@@ -104,32 +99,27 @@ function Home() {
                 className="input"
               />
 
-             
               <button className="search-button">
-
-              {showTextRecherche ? (
-        <span>Rechercher</span>
-      ) : (
-        <FontAwesomeIcon icon={faSearch} />
-      )}
+                {showTextRecherche ? (
+                  <span>Rechercher</span>
+                ) : (
+                  <FontAwesomeIcon icon={faSearch} />
+                )}
               </button>
-          
             </div>
           </div>
         </Swiper>
       </div>
-    
-      <FeaturedRooms/>
+<RoomsProvider>
+      <FeaturedRooms />
       <Banner />
       <TypeRoom />
       <MunicipalityRoom />
-    
+      </RoomsProvider>
 
-      <Testimonials/>
-      <Services/>
-   
+      <Testimonials />
+      <Services />
     </div>
-   
   );
 }
 

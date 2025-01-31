@@ -10,7 +10,7 @@ export const RoomsService={
             return response.data
             
         } catch (error:any) {
-            console.log("l'erreur lors de la recuperaion des users")
+            console.log("l'erreur lors de la recuperaion d'une salles")
 
             throw error
         
